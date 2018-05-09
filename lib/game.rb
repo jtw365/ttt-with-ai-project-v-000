@@ -27,7 +27,7 @@ class Game
     WIN_COMBINATIONS.find do |combo|
       @board.cells[combo[0]] == @board.cells[combo[1]] &&
       @board.cells[combo[1]] == @board.cells[combo[2]] &&
-      (@board.cells[combo[0]] != " "
+      (@board.cells[combo[0]] != " ")
     end
   end
 
@@ -52,7 +52,7 @@ class Game
       if self.board.valid_move?(input)
         self.board.update(input, self.current_player)
       else
-        puts 'Invalid Input or spot taken! Enter again!'
+        puts 'Invalid input or spot taken! Enter again!'
         self.turn
       end
   end
@@ -68,10 +68,4 @@ class Game
       puts "Cat's Game!"
     end
   end
-
-
-
-
-
-
 end
