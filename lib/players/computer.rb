@@ -68,7 +68,7 @@ module Players
     end
 
     def corners
-      CORNERS
+      CORNERS.shuffle!
     end
 
     def corner
