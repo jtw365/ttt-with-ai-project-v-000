@@ -36,7 +36,7 @@ module Players
         input = corner + 1
       else
         until !board.taken?(input)
-          input = (1..9).to_a.shuffle!
+          input = (1..9).to_a.first
         end
       end
     end
